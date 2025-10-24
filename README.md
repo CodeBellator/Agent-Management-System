@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-# MERN Stack Agent Management System
+# Agent Management System
 
-A full-stack web application built with MongoDB, Express.js, React.js, and Node.js for managing agents and distributing CSV/Excel lists among them.
+A full-stack MERN application for managing agents and distributing CSV/Excel data among them. Features JWT authentication, file upload with visual progress indicators, and automated equal distribution algorithm. Built with React.js, Node.js, Express.js, and MongoDB.
 
 ## Features
 
@@ -52,8 +51,8 @@ Before running this application, make sure you have the following installed:
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd mern-agent-management
+git clone https://github.com/CodeBellator/Agent-Management-System.git
+cd Agent-Management-System
 ```
 
 ### 2. Install Dependencies
@@ -75,8 +74,6 @@ JWT_SECRET=your_jwt_secret_key_here_change_in_production
 PORT=5000
 NODE_ENV=development
 ```
-
-**Important**: Change the JWT_SECRET to a secure random string in production.
 
 ### 4. Database Setup
 Make sure MongoDB is running on your system. If using MongoDB Atlas, update the MONGODB_URI in the .env file with your connection string.
@@ -176,7 +173,6 @@ Bob,+1555123456,
 
 ### Authentication
 - `POST /api/auth/login` - User login
-- `POST /api/auth/register` - Register new admin (for setup)
 - `GET /api/auth/me` - Get current user info
 
 ### Agents
@@ -195,7 +191,7 @@ Bob,+1555123456,
 ## Project Structure
 
 ```
-mern-agent-management/
+Agent-Management-System/
 ├── backend/
 │   ├── middleware/
 │   │   └── auth.js
@@ -254,53 +250,6 @@ mern-agent-management/
 - Touch-friendly interface elements
 - Accessible form controls and navigation
 
-## Production Deployment
-
-### Environment Variables for Production:
-```env
-MONGODB_URI=your_production_mongodb_connection_string
-JWT_SECRET=your_secure_random_jwt_secret
-PORT=5000
-NODE_ENV=production
-```
-
-### Build for Production:
-```bash
-npm run build
-```
-
-## Troubleshooting
-
-### Common Issues:
-
-1. **MongoDB Connection Error**
-   - Ensure MongoDB is running
-   - Check the MONGODB_URI in .env file
-   - Verify network connectivity for MongoDB Atlas
-
-2. **File Upload Issues**
-   - Check file format (CSV, XLSX, XLS only)
-   - Ensure required columns are present
-   - Verify file size is under 5MB
-
-3. **Authentication Issues**
-   - Clear browser localStorage
-   - Check JWT_SECRET in .env file
-   - Verify admin user exists in database
-
-4. **Agent Creation Issues**
-   - Ensure all required fields are filled
-   - Check for duplicate email addresses
-   - Verify password meets minimum requirements
-
 ## License
 
 This project is created for educational purposes as part of a MERN stack developer assessment.
-
-## Support
-
-For any issues or questions, please check the troubleshooting section above or review the error messages displayed in the application interface.
-=======
-# Agent-Management-System
-A full-stack MERN application for managing agents and distributing CSV/Excel data among them. Features JWT authentication, file upload with visual progress indicators, and automated equal distribution algorithm. Built with React.js, Node.js, Express.js, and MongoDB.
->>>>>>> e3ba3ff2a1ecb3939b40539469e1251d78b93e45
