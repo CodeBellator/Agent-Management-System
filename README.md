@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MERN Stack Agent Management System
 
 A full-stack web application built with MongoDB, Express.js, React.js, and Node.js for managing agents and distributing CSV/Excel lists among them.
@@ -299,3 +300,7 @@ This project is created for educational purposes as part of a MERN stack develop
 ## Support
 
 For any issues or questions, please check the troubleshooting section above or review the error messages displayed in the application interface.
+=======
+# Agent-Management-System
+A full-stack MERN application for managing agents and distributing CSV/Excel data among them. Features JWT authentication, file upload with visual progress indicators, and automated equal distribution algorithm. Built with React.js, Node.js, Express.js, and MongoDB.
+>>>>>>> e3ba3ff2a1ecb3939b40539469e1251d78b93e45
